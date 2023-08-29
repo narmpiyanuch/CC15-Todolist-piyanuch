@@ -1,4 +1,4 @@
-import './App.scss';
+import '../app/App.scss';
 import { FaHome, FaSearch } from 'react-icons/fa';
 import Search from './Search.jsx';
 

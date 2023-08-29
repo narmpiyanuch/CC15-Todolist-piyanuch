@@ -1,0 +1,28 @@
+@import '../index.scss';
+
+
+.header {
+    background-color: $primary;
+    height: $header-height;
+    color: $grey-light;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__logo {
+        display: flex;
+        cursor: pointer;
+        font-size: 25px;
+        color: $white;
+    }
+
+    &__text {
+        flex: 1;
+        color: $white;
+    }
+
+    &__search {
+        min-width: 300px;
+    }
+}
