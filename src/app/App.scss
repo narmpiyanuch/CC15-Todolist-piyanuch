@@ -53,14 +53,11 @@ $sidebar-width: 300px;
     height: calc(100vh - $header-height);
 }
 
-//Block
-.list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+// BLOCK
+.accordion {
 
+    //ELEMENT
 
-    // Element
     &__item {
         display: flex;
         gap: 15px;
@@ -69,13 +66,27 @@ $sidebar-width: 300px;
         padding: 10px;
         border-radius: 4px;
         cursor: pointer;
+        font-weight: 900;
 
-        &:hover {
-            background-color: $grey-light;
+        // MODIFIER
+        &__icon {
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        &__active {
+            transform: rotate(-90deg);
         }
 
         &__text {
-            font-weight: 400;
+            font-weight: inherit;
         }
     }
+}
+
+.todo__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
 }
